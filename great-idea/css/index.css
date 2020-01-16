@@ -183,22 +183,24 @@ header a {
 	transition: background-color 300ms;
 }
 
-.padding-right {
-	padding-right: 2%;
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-container .two-columns {
+	flex-basis: 47%;
+}
+
+.flex-container .three-columns {
+	flex-basis: 30%;
 }
 
 .home-container section {
-	display: inline-block;
 	padding: 4% 0;
 }
 
-.two-columns-section {
-	width: 49%;
-}
-
-.three-columns-section {
-	width: 32%;
-}
 
 .middle-img {
 	width: 100%;
@@ -218,7 +220,7 @@ footer p {
 
 /* Clients page */
 #clients div {
-	display: inline-block;
+	display: flex;
 }
 
 .client {
