@@ -82,7 +82,7 @@ p {
 nav {
 	position: fixed;
 	width: 100%;
-	
+	/* Set the same padding on the sides of the content of the page */
 	padding: 0 70px;
 	background-color: #fff;
 	z-index: 150;
@@ -98,41 +98,40 @@ nav {
 	width: 100%;
 	position: relative;
 	height: 70px;
+	display: flex;
+	align-items: center;
 }
 
 /* Vertically center the div with all the nav links */
 .nav-links {
-	position: absolute;
 	width: 80%;
-
-	top: 50%;
-	transform: translateY(-50%);
 }
 
-.nav-links a {
-	display: inline-block;
-	width: 13%;
-
+nav a {
 	text-decoration: none;
 	color: #999;
-
-	padding: 27px 0;
-	text-align: center;
-	
 	transition: background-color 300ms;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 }
 
-.nav-links a:hover {
+nav a:hover {
 	background-color: #333;
 	color: #fff;
 }
 
 /* Vertically center the div with the logo and shit it to the right */
-.nav-img {
-	position: absolute;
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
+.nav-logo {
+	background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right;
+    height: 100%;
+	width: 100%;
+	padding-left: 7%;
 }
 
 /* Add hover effect */
