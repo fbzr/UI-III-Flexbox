@@ -145,21 +145,28 @@ header, footer {
 	padding: 4% 0;
 }
 
+header {
+	display: flex;
+	height: 500px;
+}
+
 header div {
-	display: inline-block;
-	width: 49%;
-	text-align: center;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .header-text {
-	transform: translateY(-40%);
+	flex-direction: column;
+	text-align: center;
 }
 
 .header-image {
     background-image: url(../img/header-img.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 400px;
+	background-size: contain;
+	background-position: left;
 }
 
 header h1 {
