@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5 {
 
 p {
 	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
 }
 
 .container {
@@ -90,7 +91,7 @@ nav {
 }
 
 #navbar.scrolled {
-	background-color: rgb(204, 251, 255) !important;
+	background-color: #9ff7ed !important;
 	transition: background-color 400ms linear;
 }
 
@@ -284,5 +285,37 @@ footer p {
 	border: solid black 1px;
 	margin-top: 15px;
 	border-radius: 5px;
+}
+
+.thick-line {
+	border: 1px #000 solid;
+}
+
+#facts {
+	display: flex;
+	justify-content: space-between;
+}
+
+#facts div {
+	flex-basis: 47%;
+	max-width: 47%;
+}
+
+#facts .img-container {
+	text-align: right;
+}
+
+#facts .img-container img {
+	width: 100%;
+}
+
+#facts ul {
+	padding: 10px 0;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+#facts li {
+	margin: 10px 0;
 }
 
