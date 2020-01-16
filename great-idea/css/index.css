@@ -103,11 +103,7 @@ nav {
 }
 
 /* Vertically center the div with all the nav links */
-.nav-links {
-	width: 80%;
-}
-
-nav a {
+.nav-link {
 	text-decoration: none;
 	color: #999;
 	transition: background-color 300ms;
@@ -118,7 +114,7 @@ nav a {
 	width: 100%;
 }
 
-nav a:hover {
+nav .nav-link:hover {
 	background-color: #333;
 	color: #fff;
 }
@@ -128,10 +124,10 @@ nav a:hover {
 	background-image: url(../img/logo.png);
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: right;
+    background-position: center;
     height: 100%;
 	width: 100%;
-	padding-left: 7%;
+	padding-left: 8%;
 }
 
 /* Add hover effect */
